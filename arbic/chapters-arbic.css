@@ -1,0 +1,82 @@
+
+/*sitting box*/
+
+.language {
+    position: absolute;
+    right: 0;
+    margin-right: 201px;
+    margin-top: 61px;
+    text-align: center;
+    border-radius: 5%;
+    background-color: rgb(25, 23, 23);
+    width: 136px;
+    height: 180px;
+    z-index: 2;
+    opacity: 70%;
+    list-style: none;
+    transition: 0.5s;
+    top: -250px;
+}
+/*start landing-page*/
+
+.chapter{
+    position: relative;
+    margin: -8px;
+}
+
+.chapter h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+@media (max-width:900px) {
+    .chapter h1{
+        font-size: 30px;
+        
+    }
+}
+
+.chapter button{
+    
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    background-color: red;
+    color:white;
+    z-index: 2;
+    border: transparent;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.chapter .header .logo{
+    width: 70px;
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    top: -2px;
+
+    }
+    
+    .chapter .header .fa-globe{
+        
+    margin-top: 18px;
+margin-left: 0px;
+    position: absolute;
+    margin-right: 250px;
+    right: 0%;
+       
+    }
+/*end landing-page*/

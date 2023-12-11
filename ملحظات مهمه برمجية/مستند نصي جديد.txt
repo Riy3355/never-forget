@@ -1,0 +1,720 @@
+
+
+
+//this
+هي تعطيك الناتج حسب ما وين كاتبها 
+this===window
+الي هي فيها objictوتحل محل مالكها او 
+************************************
+let obt =Object.create({})
+تستخدم لي عمل اوبجيكت جديد بي استعمال اوبجيكت الي قبه كا نموذج 
+
+
+Object.assing
+
+DOM:::
+1- ineerHTML;تستخدم لي جلب الكود داخل HTML 
+ getAttribute
+ setAttribute;set Attribute
+2-txstcontent;تستخدم لي جلب المحتوى نصي
+createElment:  من لغة جافا سكربتHMTL لي اضافة عنصر جديد داخل 
+setAttributeNode: في مستقبل وتقدر تعدل عليهAttributeتستخدم لي اضافة 
+******
+// Append Comment To Element
+myElement.appendChild(myComment);
+
+// Append Text To Element
+myElement.appendChild(myText);
+
+// Append Element To Body
+document.body.appendChild(myElement);
+
+**************************************
+ DOM [Events]
+  - Use Events On HTML
+  - Use Events On JS
+  --- onclick
+  --- oncontextmenu
+  --- onmouseenter
+  --- onmouseleave
+
+  --- onload
+  --- ***onscroll  (ممكن تفيدك)تعرف وين وصلت في سكرول
+  --- onresize
+
+  --- onfocus
+  --- onblur
+  ---  للتاكد من بيانات عند كتابتها فonsubmitفورمي 
+    - click 
+  - focusتستحدم لتركيزعلى الفراغ
+  - blur
+  
+onmouseenter:حدث يصير لما تخطم بي الماوس
+**preventDefault:لمنع حصول الحدث او سلوك (مهمه)
+*****
+***[valueللوصول لل
+let userInput = document.querySelector("[name='']");
+let ageInput = document.querySelector("[name='']");
+]
+
+ [ DOM [Class List]
+  - classList
+  --- length
+  --- contains :   boolean value serch the class
+  --- item(index)
+  --- add:
+  --- remove
+  --- toggle:remove if the class do not find and add
+ ]
+
+ممكن تفيدك**
+  DOM [Deal With Elements]
+  - before [Element || String]
+  - after [Element || String]
+  - append [Element || String]
+  - prepend [Element || String]
+  - remove
+
+  لتنقل بين الاشقاء:
+   [ DOM [Traversing]
+  - nextSibling
+  - previousSibling
+  - nextElementSibling
+  - previousElementSibling
+  - parentElement:يوصلنا للاب ويمكن تغير وتلاعب في خصائص الاب
+   ]
+   cloneNode:يستخدم لعمل نسخه للعنصر دون تاثير على العنصر الاصلي
+
+addEventListener*****:تستخدم لي اضافة الحدث لكن ميزتها انها تقدر ضيف حدث للعنصر لوعنصر مش موجود في صغحه
+***************************************************
+Bom
+
+  BOM [Browser Object Model]
+  - setTimeout(Function, Timeout, Additional Params): بعد وقت معينFunctionلمناداة ال 
+  - clearTimeout(Identifier):to stop setTimeout
+    - setInterval(Function, Millseconds, Additional Params): بي استمرارالfunctionلمناداة 
+  - clearInterval(Identifier):لوقف مناداة Function
+  
+  - location Object
+  --- href Get / Set [URL || Hash || File || Mail]
+  --- host:chang the host
+  --- hash
+  --- protocol:معرفة مصدر ملف الموقع
+  --- reload():reload the page
+  --- replace():use wehn you don`t wont the web to go the sarech history list 
+  --- assign():it is like replace but it will be in the sarech history list
+
+    - open(URL [Opt], Window Name Or Target Attr [Opt], Win Features [Opt], History Replace [Opt]):use to open new page
+  - close():close the page from just open script
+  - Window Features
+  --- left [Num]
+  --- top [Num]
+  --- width [Num]
+  --- height [Num]
+  --- menubar [yes || no]
+
+   History API
+  --- Properties
+  ------ length
+  --- Methods
+  ------ back()
+  ------ forward()
+  ------ go(Delta) => Position In History
+
+  Search [For Advanced Knowledge]
+  - pushState() + replaceState()
+
+  
+  BOM [Browser Object Model]
+  - stop():to stop the lodeing in the page
+  - print()
+  - focus()
+  - scrollTo(x, y || Options):this support from apell
+  - scroll(x, y || Options)
+  - scrollBy(x, y || Options)
+
+
+  
+  Local Storage : يستخدم لي حفظ التغيرات الي دارها المستحدم زي لون متصفح او لغة او رمز حسابة
+  - setItem : SENT the item to Storage
+  - getItem : get item from Storage
+  - removeItem:remove one item
+  - clear:remove all items
+  - key
+
+  Info
+  - No Expiration Time
+  - HTTP And HTTPS
+  - Private Tab
+
+    Session Storage:تستخدم لي حفظ التغيرات الي دارها المستخدم في تاب فقط ولما تطلع من التاب او برنامج يمتسحو
+  - setItem
+  - getItem
+  - removeItem
+  - clear
+  - key
+
+  Info
+  - New Tab = New Session
+  - Duplicate Tab = Copy Session
+  - New Tab With Same Url = New Session
+*/
+*/
+*/
+Destructuring: وضيفها في متغير جديدmaps Array objectsتستخدم لياخذ بياتات من 
+  " is a JavaScript expression that allows us to extract data from arrays,
+    , and  and set them into new, distinct variables. "
+  - Destructuring
+
+Destructuring in the arrays:
+
+arrays[variables,variables2,]
+[obj,obj2,obj3]
+
+Nested arrays[obj,[athor obj]]
+
+Destructuring in objict:
+
+opjcts{obj,obj2}
+-- Naming The Variables=:new name
+ Nested Object:{name Object{athor Object}}
+
+Destructuring in the Function;
+
+Function name({obj}=the obj you wont){
+-- Naming The Variables=:new name
+ Nested Function:{name Object{athor Object}}
+
+}
+************************
+/*Set Data Types:ل غير هي تحذف البيانات الكررةarrayنفس 
+Ex:let set Types= new Set([values]) 
+
+propurty:
+size:عدد العناصر
+
+mathods:
+add
+delete
+clear
+has:boolean value use to sarech value 
+
+
+*
+  - Set vs WeakSet
+  "
+    The WeakSet is weak,
+    meaning references to objects in a WeakSet are held weakly.
+    If no other references to an object stored in the WeakSet exist,
+    those objects can be garbage collected.
+  "
+  --
+  Set     => Can Store Any Data Values
+  WeakSet => Collection Of Objects Only
+  --
+  Set     => Have Size Property
+  WeakSet => Does Not Have Size Property
+  --
+  Set     => Have Keys, Values, Entries
+  WeakSet => Does Not Have clear, Keys, Values And Entries
+  --
+  Set     => Can Use forEach
+  WeakSet => Cannot Use forEach
+
+  Usage: Store objects and removes them once they become inaccessible
+*/
+
+
+
+
+  - Map Data Type
+  Syntax: new Map(Iterable With Key/Value)
+  -- Map vs Object
+  --
+  ------ Map => Does Not Contain Key By Default
+  ------ Object => Has Default Keys
+  --
+  ------ Map => Key Can Be Anything [Function, Object, Any Primitive Data Types]
+  ------ Object => String Or Symbol
+  --
+  ------ Map => Ordered By Insertion
+  ------ Object => Not 100% Till Now
+  --
+  ------ Map => Get Items By Size
+  ------ Object => Need To Do Manually
+  --
+  ------ Map => Can Be Directly Iterated
+  ------ Object => Not Directly And Need To Use Object.keys() And So On
+  --
+  ------ Map => Better Performance When Add Or Remove Data
+  ------ Object => Low Performance When Comparing To Map
+
+
+  map Methods:
+  set:
+  get:
+  delete:
+  clear:
+  has:
+
+  ********************
+   - Array.copyWithin(Target, Start => Optional, End => Optional):هي تستخدم لنقل لنسخ البيانات ونقلها من مكان الى اخر في الاري
+*/ -- Target
+  ---- Index To Copy Part To
+  ---- If At Or Greater Than Array Length Nothing Will Be Copied
+  -- Start
+  ---- Index To Start Copying From
+  ---- If Ommited = Start From Index 0:اذا لم تكنب البداية يبدا من صفر
+  -- End
+  ---- Index To End Copying From
+  ---- Not Including End
+  ---- If Ommited = Reach The End:لو لم تكتب النهاية ينتهي لي عند نهاية الاري
+*******************************************************
+Regular Expressions :هوا زي شرط تحطه للبحث عن جملة معينة او سطر او رمز
+
+senraxe:
+/pattern/modifier s:هي تستخدم لكتابة مواصفات الكلمة او الجملة او السطر الي تبي دور عليها
+
+modifiers:وهي تعدل طريقة البحث او تضع شروط للبحث=>fages
+i=>الحروف الحساسة يعني مافي فرق بين الحروف الرئسية والصغيرة
+g=>global
+m=>multielins=more then one line
+
+
+sarech Method:
+match()
+///////
+طريقة كتابة تفيدك هلبا لما تحط شروط
+(a|z)=>a or z
+[a-z]:=>a to z
+[^a-z]=>all without atpz
+[a-z0-9]=>a to z and 0to9
+[^a-z0-9]=>all without a to z and 0 to 9
+
+
+
+Character Classes :
+ /./ =>matches anycracter exapt new line
+ \w=> matches any word or [[a-z] [A-Z] [0-9]]
+ \W => don`t matches word and number
+ \d => matches digit 0 to 9
+ \D => don`t digit number|
+ \s => matches the space
+ \S => don`t match the space
+\b => لتحديد البداية الجملة او كلمة
+\B =>لي الغاء البداية في جملة او كلمة
+
+test method:
+pattern.test()
+
+
+  Quantifiers
+  n+    => One Or More
+  n*    => zero or more
+  n?    => zero or one
+
+  /*
+
+n{x} = تحديد كم مرة تكرار العنصر
+n{x,y}=> range
+n{x,}=> اقل حاجة اكس
+*/
+
+Ex:[
+
+let serials = "S100S S3000S S50000S S950000S";
+let re = /s\d{3}s/ig //S[3 numbers]s
+
+
+let re2=/s\d{4,5}s/ig//S[four or five ]S
+
+let re3=/s\d{4,}s/ig//S[four is lastes]
+
+console.log(serials.match(re3))
+]
+
+  Quantifiers part2:
+
+$ => end with somthing
+^ => start with //////
+?= => folloyed by somthing
+?! => Not folloyed by somthing
+
+
+
+************************
+replace:لتبديل الكلمة بي كلمة اخرى
+replaceAll:
+**************
+Regular Expressions 
+Ex:
+document.getElementById('form').onsubmit=function(){
+    let phone=document.getElementById('Phone').value;
+    let phonere=/\(\d{4}\)\s\d{3}-\d{4}/;
+    let valede=phonere.test(phone);
+   if(valede===false){
+    return false
+}
+    return true
+}
+
+Ex2:
+let url1 = 'elzero.org';
+let url2 = 'http://elzero.org';
+let url3 = 'https://elzero.org';
+let url4 = 'https://www.elzero.org';
+let url5 = 'https://www.elzero.org:8080/articles.php?id=100&cat=topics';
+
+let re = /(https?:\/\/)?(www.)*\w*.org(:\d{4}\/\w{8}.\w{3}\?id=\w{3,}&\w{3,}=\w{0,})?/ig;
+
+console.log(url1.match(re));
+console.log(url2.match(re));
+console.log(url3.match(re));
+console.log(url4.match(re));
+console.log(url5.match(re))
+
+
+
+***********************
+OOP:هوا طريقة لكتابة الاكواد
+  Constructor Function:
+   - Update Properties
+  - Built In Constructors
+  
+  Class
+  - Static Properties And Methods:وهي تسخدم لتعديل او اضافة  على كلاس فقط 
+Inheritance:هي تفيدك في وراثة الخواص الخاصه في اي كلاس لي كلاس جديد
+extends:اسم الكلاس الى تبي تورث منهم العناصر
+super(propurty Inheritance)
+*/
+
+  Encapsulation=# =>تستخدم لجعل العنصر برافيت ولايمكن الا للالعناصر الي داخل الكلاس رؤيته
+  - Class Fields Are Public By Default
+  - Guards The Data Against Illegal Access.
+  - Helps To Achieve The Target Without Revealing Its Complex Details.
+  - Will Reduce Human Errors.
+  - Make The App More Flexible And Manageable.
+  - Simplifies The App.
+*/
+
+  Object Meta Data And Descriptor
+  Object.defineProperty():او نعدلها وهي موجود propurtyهي طريقة لي اضافة 
+  - writable (true|false):تسمح لك بكتابة عليها او تغيرها
+  - enumerable (true|false): او لاloobتسمح لك بي ادحالها في عملية 
+  - configurable [Cannot Delete Or Reconfigure]
+  Object.definePropertys():like the defineProperty but you can bout more objects
+ 
+*/
+**********************************************
+
+  Date And Time
+  - Date Constructor
+
+  Static Methods
+  - Date.now():تستحدم لمعرفة الوقت الان
+
+  - To Track Time You Need Starting Point
+  - Epoch Time Or Unix Time In Computer Science Is The Number of Seconds Since January 1, 1970.
+  - Why 1970 [829 Days To 136 Years]
+
+  Search For
+  - Year 2038 Problem in Computer Science.
+*/
+EX:
+let dateNow = new Date();
+
+console.log(dateNow);
+
+console.log(Date.now()); // 1000 Mill = 1 Second
+
+let seconds = Date.now() / 1000; // Number Of Seconds
+console.log(`Seconds ${seconds}`);
+
+let minutes = seconds / 60; // Number Of Minutes
+console.log(`Minutes ${minutes}`);
+
+let hours = minutes / 60; // Number Of Hours
+console.log(`Hours ${hours}`);
+
+let days = hours / 24; // Number Of Days
+console.log(`Days ${days}`);
+
+let years = days / 365; // Number Of Years
+console.log(`Years ${years}`);
+
+
+
+  Date And Time
+  - getTime() => Number Of Milliseconds
+  - getDate() => Day Of The Month
+  - getFullYear()
+  - getMonth() => Zero Based
+  - getDay() => Day Of The Week
+  - getHours()
+  - getMinutes()
+  - getSeconds()
+
+  
+  Date And Time
+  - setTime(Milliseconds)
+  - setDate() => Day Of The Month [Negative And Positive]
+  - setFullYear(year, month => Optional [0-11], day => Optional [1-31])
+  - setMonth(Month [0-11], Day => Optional [1-31]) [Negative And Positive]
+  - setHours(Hours [0-23], Minutes => Optional [0-59], Seconds => Optional [0-59], MS => Optional [0-999])
+  - setMinutes(Minutes [0-59], Seconds => Optional [0-59], MS => Optional [0-999])
+  - setSeconds(Seconds => [0-59], MS => Optional [0-999])
+*/
+
+  Date And Time
+
+  new Date(timestamp)
+  new Date(Date String)
+  new Date(Numeric Values)
+
+  Format
+  - "Oct 25 1982"
+  - "10/25/1982"
+  - "1982-10-25" => ISO International Standard
+  - "1982 10"
+  - "1982"
+  - "82"
+  - 1982, 9, 25, 2, 10, 0
+  - 1982, 9, 25
+  - "1982-10-25T06:10:00Z"
+
+  Date.parse("String") // Read Date From A String
+*/
+Generator Function Introduction = function* name(){}:هي مختلفة هي تخدم لما تحتاجه بس 
+
+  Generators
+  - Delegate Generator:الاخرى Generators  عن  yield هي تنوب عمل 
+
+  Ex: [
+    
+
+function* generateNums() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+
+function* generateLetters() {
+  yield "A";
+  yield "B";
+  yield "C";
+}
+
+function* generateAll() { = Delegate Generator
+  yield* generateNums();
+  yield* generateLetters();
+  yield* [4, 5, 6];
+}
+  ]
+
+  
+  Modules:هوا ملف يتم فيه عمل الاكواد البرمجية
+  - Import :  الى الملف الاخرfunctions objects Arrayوهي لي جلب العمليات و
+   And Export :التي تريدها fnctions objects Arrayوهي عملية لي اختيار
+Default:وهي تستخدم مرة واحدة في موديل يمكن منادتها بي اي اسم
+Import*=> all objects ,arrays,
+*/
+
+
+  What Is JSON ?
+  - JavaScript Object Notation
+  - Format For Sharing Data Between Server And Client
+  - JSON Derived From JavaScript
+  - Alternative To XML
+  - File Extension Is .json
+
+  Why JSON ?
+  - Easy To Use And Read
+  - Used By Most Programming Languages And Its Frameworks
+  - You Can Convert JSON Object To JS Object And Vice Versa
+
+  JSON vs XML
+  ===================================================
+  = Text Based Format      = Markup Language        =
+  = Lightweight            = Heavier                =
+  = Does Not Use Tags      = Using Tags             =
+  = Shorter                = Not Short              =
+  = Can Use Arrays         = Cannot Use Arrays      =
+  = Not Support Comments   = Support Comments       =
+  =================================================
+  
+  JSON Syntax
+  - Data Added Inside Curly Braces {  }
+  - Data Added With Key : Value
+  - Key Should Be String Wrapped In Double Quotes
+  - Data Separated By Comma
+  - Square Brackets [] For Arrays
+  - Curly Braces {} For Objects
+
+  Available Data Types
+  - String
+  - Number
+  - Object
+  - Array
+  - Boolean Values
+  - null
+
+JSON mathods:
+  parse:js object الى  JSON text لتحويل 
+  stringify: parse عكس 
+
+*************************
+ Asynchronous vs Synchronous Programming:
+ Synchronous : هي عملية برمجية تتم عندما تتم العمليات الي قبلها
+ Asynchronous: هي عملية برمجية تتم وغير مرتبطة بي عمليات برمجية الاخرى
+
+*************************
+/*
+  To Understand Ajax, Fetch, Promises
+
+  Event Loop + Callback Queue
+
+  Story
+  - JavaScript Is A Single Threaded Language "All Operations Executed in Single Thread"
+  - Call Stack Track All Calls
+  - Every Function Is Done Its Poped Out
+  - When You Call Asynchronous Function It Sent To Browser API
+  - Asynchronous Function Like Settimeout Start Its Own Thread
+  - Browser API Act As A Second Thread
+  - API Finish Waiting And Send Back The Function For Processing
+  - Browser API Add The Callback To Callback Queue
+  - Event Loop Wait For Call Stack To Be Empty
+  - Event Loop Get Callback From Callback Queue And Add It To Call Stack
+  - Callback Queue Follow FIFO "First In First Out" Rule
+*/
+
+console.log("One");
+setTimeout(() => {
+  console.log("Three");
+}, 0);
+setTimeout(() => {
+  console.log("Four");
+}, 0);
+console.log("Two");
+
+setTimeout(() => {
+  console.log(myVar);
+}, 0);
+
+let myVar = 100;
+myVar += 100;
+*****************
+
+  AJAX
+  - Asynchronous JavaScript And XML
+  - Approach To Use Many Technologies Together [HTML, CSS, Js, DOM]
+  - It Use "XMLHttpRequest" Object To Interact With The Server
+  - You Can Fetch Data Or Send Data Without Page Refresh
+  - Examples
+  --- Youtube Studio
+  --- Google Drive
+  --- Upload Article Photo
+  --- Form Check Name
+
+  Test new XMLHttpRequest();
+  Request And Response
+  Status Code
+*/
+
+  Ajax
+  - Ready State => Status Of The Request
+  [0] Request Not Initialized
+  [1] Server Connection Established
+  [2] Request Received
+  [3] Processing Request
+  [4] Request Is Finished And Response Is Ready
+  - Status
+  [200] Response Is Successful
+  [404] Not Found
+*/
+****************************
+
+  Promise Intro And Syntax
+  - Promise In JavaScript Is Like Promise In Real Life
+  - Promise Is Something That Will Happen In The Future
+  - Promise Avoid Callback Hell
+  - Promise Is The Object That Represent The Status Of An Asynchronous Operation And Its Resulting Value
+
+  - Promise Status
+  --- Pending: Initial State
+  --- Fulfilled: Completed Successfully
+  --- Rejected: Failed
+
+  Story
+  - Once A Promise Has Been Called, It Will Start In A Pending State
+  - The Created Promise Will Eventually End In A Resolved State Or In A Rejected State
+  - Calling The Callback Functions (Passed To Then And Catch) Upon Finishing.
+
+  - Then
+  --- Takes 2 Optional Arguments [Callback For Success Or Failure]
+*/
+
+  Promise Training
+
+  We Will Go To The Meeting, Promise Me That We Will Find The 4 Employees
+  .then(We Will Choose Two People)
+  .then(We Will Test Them Then Get One Of Them)
+  .catch(No One Came)
+
+  Then    => Promise Is Successfull Use The Resolved Data
+  Catch   => Promise Is Failed, Catch The Error
+  Finally => Promise Successfull Or Failed Finally Do Something
+*/
+
+  Fetch API
+  - Return A Representation Of the Entire HTTP Response
+*/
+
+  Promise
+  - All: resolvedتكون  promises   ولازم كلArrayوهي تجيبلك قيم الوعود تحطهم  داخل ال
+  - All Settled:تجيبلك كل قيم الوعود
+  - Race:تجيبلك اول قيمة تجي قدامها
+
+
+  Async
+  - Async Before Function Mean This Function Return A Promise
+  - Async And Await Help In Creating Asynchronous Promise Behavior With Cleaner Style
+
+
+
+  Await
+  - Await Works Only Inside Asnyc Functions
+  - Await Make JavaScript Wait For The Promise Result
+  - Await Is More Elegant Syntax Of Getting Promise Result
+*/
+
+  Async & Await With Try, Catch, Finally
+*/
+
+async function fatchData(){
+
+    
+        console.log('Befor fatch')
+try{
+let myDate=await fetch("https://api.github.com/users/elzerowebschool/repos")
+console.log(await myDate.json())
+}catch(rusalt){
+console.log(Error(`${rusalt}`))
+    } finally{
+         console.log('After promise')
+    }
+   
+}
+
+
+fatchData()
+
+
+
+
+
+
+
+
+
+
+

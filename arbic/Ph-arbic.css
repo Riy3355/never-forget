@@ -1,0 +1,42 @@
+
+
+/*sitting box*/
+
+.language {
+    position: absolute;
+    right: 0;
+    margin-right: 251px;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 5%;
+    background-color: rgb(25, 23, 23);
+    width: 136px;
+    height: 180px;
+    z-index: 2;
+    opacity: 70%;
+    list-style: none;
+    transition: 0.5s;
+    top: -350px;
+}
+/*start landing-page*/
+
+.Landing-Page .header .logo{
+    width: 300px;
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    top: -2px;
+
+    }
+    
+    .Landing-Page .header .fa-globe{
+        
+    margin-top: 18px;
+margin-left: 0px;
+    position: absolute;
+    margin-right: 310px;
+    right: 0%;
+       
+    }
+/*end landing-page*/

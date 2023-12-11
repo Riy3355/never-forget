@@ -1,0 +1,208 @@
+ت
+
+  - Do Not Repsepct Width, Height
+  - Respect Padding And Margin [ Just Wight +eft ]
+  - Do Not Add Line Break
+  - Allow Elements Before And After It in The Same Line
+
+  Inline-Block
+
+  - Allow Elements Before And After It in The Same Line
+  - Respect Padding, Margin, Width, Height
+
+*/
+تستخدم ايضا لي اخفاء العناصر
+********************
+/*grouping(مهمه)
+.one,
+.two,
+.three,
+.four,
+.my-p {
+  padding: 15px;
+  margin: 12px 0;
+  background-color: #ededed;
+}
+////////text value////////////
+ width: fit-content:ممكن تفيدك
+  letter-spacing: لعمل مسافة بين الحروف
+  line-height:مسافة بين سطور
+  word-spacingمسافة بين كلام 
+      text-overflow: ellipsis;لتبين ان النص مخفي
+      inherit:وهي تعني انك تورث صفات عن الاب والاب هوا العنصر الرئيسي
+      وحدات القياس :
+      px:dufalt value is 16px
+      em:time=20px
+      vem:root time>=16px
+      wh:width the page
+      font-weight:تدكين الخط
+      cursor:تغير شكل الماوس
+float:لتوزيع العناصر
+clear:
+calc():الة حاسبه
+    opacity:شفافيه
+    
+position:لتحريك العنصر
+relative:لتحريك بنائا على العنصر
+absolute:لتحريك بنائا على الاب الي هوا فيه
+fixed:يتحرك معاك وين ماتنزل في الصفحه
+z-index:لي اختيار اما عنصر يجي فوق التاني والقيمه الاكبر هوا يجي فوق
+************************
+Pseudo Elements:هو عنصر مزيف 
+first-line
+first-letter
+atrubuts(very importet)
+after:لي اضافة عنصر مزيف بعد العنصر بدون تدخل اتش تي ام ال
+before:اضافة عنصر مزيف قبل العنصر بدون تدخل اتش تي ام ال
+content:before , afterمهمه لظهور العناصر المزيفه من  
+ Box Shadow;
+transition(مههههههههههههههههم):هي خاصيه تتحكم عند تغير العنصر من حالة لي حالة تتحم في وقت الانتقال ومكان وتتحك في العرض والطول وحاجات 
+transition-duration:transition time
+transition-delay:يتحكم في الوقت الي قبل تنفيد التحول
+transition-property:transition for property
+    transition-timing-function
+    *******************
+    !important:inlain style تستغمل عند الخدمه غلى مشروع مع ناس تانية فايدتها اتها تعطي الاولوية لي كود جديد علو القديم حتى لو كان 
+
+*********************************************************
+(مهههههههههههم)
+  CSS Variables
+  - Global Variable
+  - Local Variable
+  var(Variable Name, Fall Back Value)
+******************************
+
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+justify-content: move countent in flex box rows
+  - align-items: stretch => Default Value
+align-content:ميزتها تتحكم في المحتوى طوليا
+for child:
+flex-grow=>default value is 0 :تحدد العنصر الي يكبر  يكبر كل ما لقى مساحة يكبر فيها 
+flex-shrink=>default value is 1 :تحدد العنصر الي ينكمش اول واحد فيهم
+order:تحرك العنصر في مكان عنصر
+  *******************************************
+filter:اضافة فلتر للعنصر 
+some filter propertys is :blur(),invert()grayscale()
+*************************************
+  Gradients
+  linear-gradient(Direction || Angle, Color Stop 1, Color Stop 2, ....)
+*******************
+Pointer Events And Caret Color;
+*************************************
+transform;
+
+transform 2D;
+scale:(scalex,scaley):تمدد افقيا او عموديا:>deg
+rotet:لب التفاف العنصر=>deg
+translate:لتحريك العناصر(translate-x,translate-y)=>deg
+matrix():(scalex,skwex,skwey,scalet,translatex,translatey):لي كتابة عناصر الترانس فورم في سطر واحد وقيمة بي الارقام ليست بوحدة قياس الزاوية
+  transform-origin:منشئ الخاص بتاع transform
+  transform 3D;
+    backface-visibility: hidden:تتحك لو ان مستخدم يقدر يشبح شكل او لا
+    perspective:
+transform-style: وانت دير في فليب العناصر يحافظو على حالة بعد الثالث
+*********************************
+
+Animation;
+@kayframes:تحكم في شكل الفريمات في الانميشن
+animation-name:لتحديد اسم الانميشن
+ animation-duration:مدة الانميشن
+ animation-iteration-count:عدد مرات لي فعل الانميشن
+ animation-direction:لتحديد اتجاه العنصر
+  animation-fill-mode 
+  animation-play-state
+  animation short hand
+
+*/
+***************************************
+
+selectors;
+
+Elemant=>[div,p,h1.span////////////]
+.class-name
+#id
+Element .class-name=>div .class-name
+.pirant .child
+.class-one.class-two
+Elemant .classname,
+Elemant
+.pirant > .child
+*********part2***********
+Elemant + Other Elemant=>[div + p]
+Elemant ~ Other Elemants=> in the same perant
+Elemant[Attribute]=>div[name]
+Elemant[Attribute=value]
+Elemant[Attribute~=Value]=> contanis A word
+Elemant[Attribute*=Value]=> contanis A String
+Elemant[Attribute^=Value]=> Start with string
+********part3*******
+:first-child
+:last-child
+:first-of-type
+:last-of-type
+:only-child
+:only-of-type
+********part4**********
+:not(selectore)
+:nth-child(number)
+:nth-last-child(number)
+:nth-of-type(number)
+:nth-last-of-type(number)
+*******part5***********
+:root
+:checked
+:empty
+:disabled
+:requirad
+:foucs
+::selection
+::placeholder
+***************************************
+@media:مهمتها تقدر تقول تحديد قواعد عليها هيتم تنسيق العناصر وفق القواعد زي تحديد حجم شاشات الهواتف
+
+***********************
+Create Your Framework:فكرتها انك تختصر عليك الوقت وهي انك دير تنسيق لي كلاس معين في سي اس اس ونمشي تحطها في اتش تي ام ال
+**********************************************
+/* inherit:لي وراثة خصائص الاب
+initial=>dufalt value
+unset:
+if inherit=>inherit
+if not=>initial
+revrant
+all;short hand
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
